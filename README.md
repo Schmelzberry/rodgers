@@ -24,9 +24,13 @@ Code: count("4");
 Expected Output: ["1", "2", "won't you be my neighbor?", "4"]
 
 Test #3 "It should change any number with a 3 in it to "won't you be my neighbor?"
-Code: count("4");
+Code: count("14");
 Expected Output: [1, 2, "won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10, 11, 12, "won't you be my neighbor?", 14]
 
 Test #4 "It should change any number with a 2 in it to "boop"
-Code: count("4");
+Code: count("14");
 Expected Output: [1, "boop", "won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10, 11, "boop", "won't you be my neighbor?", 14]
+
+Test #5 "It should change any number with a 1 in it to "beep"
+Code: count("14");
+Expected Output: ["beep", "boop", "won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "beep", "beep", "boop", "won't you be my neighbor?", "beep"]
