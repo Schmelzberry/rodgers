@@ -22,3 +22,7 @@ Expected Output: ["2", "4", "6", "8"]
 Test #2 "It should replace the number 3 with "won't you be my neighbor?"
 Code: count("4");
 Expected Output: ["1", "2", "won't you be my neighbor?", "4"]
+
+Test #3 "It should change any number with a 3 in it to "won't you be my neighbor?"
+Code: count("4");
+Expected Output: [1, 2, "won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10, 11, 12, "won't you be my neighbor?", 14]
