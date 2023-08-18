@@ -1,9 +1,10 @@
 function rodgersCount(input) {
-  let splitInput = input.split(", ");
-  let newArray = [];
-  for (let i = 1; i <= splitInput; i+=1) {
-      newArray.push(i);
-    }
-    return newArray;
+  let splitInput = input.split(" ");
+  let userInfoArray = [];
+  for (let i = 1; i <= splitInput; i += 1) {
+    userInfoArray.push(i);
   }
-  
+  return userInfoArray;
+}
+
+
