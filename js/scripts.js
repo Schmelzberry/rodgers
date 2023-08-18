@@ -10,7 +10,11 @@ function count(input) {
 function numReplace(userInfoArray) {
 let filteredArray = [];
 userInfoArray.forEach(function(element){
-  filteredArray.push(element * 2);
+  if (element === 3) {
+    element = "won't you be my neighbor?";
+    
+  }
+  filteredArray.push(element);
 })
   return filteredArray;
 }
