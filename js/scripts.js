@@ -3,7 +3,7 @@ function rodgersCount(input) {
   let newArray = [];
   for (let i = 0; i < splitInput; i+=1) {
     newArray.push(i.length-1)
-    // return newArray
+
   }
   return newArray;
 }
