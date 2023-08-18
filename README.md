@@ -11,3 +11,5 @@ Expected Output: ["1", "2", "3", "4"]
 Test #3 "it should return a string up to the user's inputted number"
 Code: rodgersCount("5");
 Expected Output: ["1", "2", "3", "4", "5"]
+
+Test #4 "it should replace the letter 1 with the word "beep"
