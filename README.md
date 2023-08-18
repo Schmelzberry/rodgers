@@ -12,6 +12,9 @@ Test #3 "it should return an array counting up to the user's inputted number"
 Code: rodgersCount("5");
 Expected Output: ["1", "2", "3", "4", "5"]
 
-Test #4 "it should replace any number containing a 3 with the phrase "won't you be my neighbor?"
+
+Describe: numReplace() 
+
+Test #1 "it should replace the number 3 with the phrase "won't you be my neighbor?"
 Code: rodgersCount("4");
 Expected Output: ["1", "2", "won't you be my neighbor?", "4"]
