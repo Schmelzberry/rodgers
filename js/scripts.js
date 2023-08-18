@@ -13,6 +13,7 @@ function numReplace(userInfoArray) {
     if (element.toString().includes("3")) {
       element = "won't you be my neighbor?";
       filteredArray.push(element);
+      
     } else {
 
       filteredArray.push(element);
