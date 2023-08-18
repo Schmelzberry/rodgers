@@ -13,11 +13,11 @@ function numReplace(userInfoArray) {
     if (element.toString().includes("3")) {
       element = "won't you be my neighbor?";
       filteredArray.push(element);
-      
-    } else {
-
+    } else if (element.toString().includes("2")) {
+      element = "boop";
       filteredArray.push(element);
     }
+    filteredArray.push(element);
   });
   return filteredArray;
 }
