@@ -12,8 +12,11 @@ let filteredArray = [];
 userInfoArray.forEach(function(element){
   if (element === 3) {
     element = "won't you be my neighbor?";
+  } else if (element === 2) {
     
   }
+    
+
   filteredArray.push(element);
 })
   return filteredArray;
