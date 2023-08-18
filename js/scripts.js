@@ -1,3 +1,4 @@
 function rodgersString(input) {
-return input;
+  let splitInput = input.split(" ");
+  return splitInput;
 }
