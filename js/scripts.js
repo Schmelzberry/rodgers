@@ -4,21 +4,20 @@ function count(input) {
   for (let i = 1; i <= splitInput; i += 1) {
     userInfoArray.push(i);
   }
-    return numReplace(userInfoArray);
+  return numReplace(userInfoArray);
 }
 
 function numReplace(userInfoArray) {
-let filteredArray = [];
-userInfoArray.forEach(function(element){
-  if (element === 3) {
-    element = "won't you be my neighbor?";
-  } else if (element === 2) {
-    
-  }
-    
+  let filteredArray = [];
+  userInfoArray.forEach(function (element) {
+    if (element.toString().includes("3")) {
+      element = "won't you be my neighbor?";
+      filteredArray.push(element);
+    } else {
 
-  filteredArray.push(element);
-})
+      filteredArray.push(element);
+    }
+  });
   return filteredArray;
 }
 
