@@ -16,8 +16,12 @@ function numReplace(userInfoArray) {
     } else if (element.toString().includes("2")) {
       element = "boop";
       filteredArray.push(element);
-    }
+    } else if (element.toString().includes("1")) {
+      element = "beep";
+      filteredArray.push(element);
+    } else {
     filteredArray.push(element);
+    }
   });
   return filteredArray;
 }
