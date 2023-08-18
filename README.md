@@ -1,4 +1,4 @@
-Describe: rodgersCount()
+Describe: count()
 
 Test #1: "it should return a string if the user inputs a string"
 Code: rodgersCount(input);
@@ -15,6 +15,6 @@ Expected Output: ["1", "2", "3", "4", "5"]
 
 Describe: numReplace() 
 
-Test #1 "it should replace the number 3 with the phrase "won't you be my neighbor?"
+Test #1 "it should further modify the user's array from count function using for each loop"
 Code: rodgersCount("4");
-Expected Output: ["1", "2", "won't you be my neighbor?", "4"]
+Expected Output: ["2", "4", "6", "8"]
