@@ -12,10 +12,11 @@ let filteredArray = [];
 userInfoArray.forEach(function(element){
   filteredArray.push(element * 2);
 })
-return filteredArray;
+  return filteredArray;
 }
 
 // wonky conditional that breaks out of loop
+// but is it still usable?
 // if (i === 3) {
 //   i = "won't you be my neighbor";
 // }
