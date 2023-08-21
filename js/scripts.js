@@ -49,7 +49,7 @@ function formSubmission(event) {
 
   output.innerHTML = '';
   document.getElementById("bot").innerText = count;
-  output.append("your results are: " + numsFiltered);
+  output.append("Your results are: " + numsFiltered);
   form.reset();
   
 }
