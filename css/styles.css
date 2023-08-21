@@ -18,6 +18,10 @@ form {
   padding: px;
 }
 
+.hidden {
+  display:none;
+}
+
 
 img {
   height: 400px;

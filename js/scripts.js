@@ -21,7 +21,7 @@ function numReplace(userInfoArray) {
       element = "beep";
       filteredArray.push(element);
     } else {
-    filteredArray.push(element);
+      filteredArray.push(element);
     }
   });
   return filteredArray;
@@ -29,33 +29,30 @@ function numReplace(userInfoArray) {
 
 // UI Logic
 function formSubmission(event) {
+  document.querySelector("div#results").removeAttribute("class", "hidden");
   let form = document.querySelector("form")
-  let output =  document.getElementById("bot-output")
+  let output = document.getElementById("bot-output")
   event.preventDefault();
   const numsToReplace = document.getElementById("bot").value;
   const numsFiltered = count(numsToReplace);
+
+  output.innerHTML ='';
   document.getElementById("bot").innerText = count;
-  output.append("Beepity Boopity, here's your results: " + numsFiltered);
+  output.append("your results are: " + numsFiltered);
+  form.reset();
+  form.addEventListener("submit", refreshForm);
+}
+
+function refreshForm() {
+  let form = document.querySelector("form");
   form.reset();
 }
 
-function refreshFormResults() {
-  if (document.querySelector("input").innerText !== "") {
-    console.log("it works")
-  document.getElementById("bot-output").innerText = "";
-  }
- 
-}
 
+window.addEventListener("load", function () {
+  let form = document.querySelector("form");
+  form.addEventListener("submit", formSubmission);
 
-// function clickHappened() {
-//   let button = document.querySelector("button");
-//   button.addEventListener("click", refreshFormResults);
-// }
-
-
-window.addEventListener("load", function() {
-  this.document.querySelector("form").addEventListener("submit", formSubmission);
 })
 
 
