@@ -1,4 +1,6 @@
 // Business Logic
+
+// create array of numbers
 function count(input) {
   let splitInput = input.split(" ");
   let userInfoArray = [];
@@ -8,6 +10,7 @@ function count(input) {
   return numReplace(userInfoArray);
 }
 
+// modify array based on numbers present in results
 function numReplace(userInfoArray) {
   let filteredArray = [];
   userInfoArray.forEach(function (element) {
@@ -28,6 +31,14 @@ function numReplace(userInfoArray) {
 }
 
 // UI Logic
+
+// onload event listener
+window.addEventListener("load", function () {
+  let form = document.querySelector("form");
+  form.addEventListener("submit", formSubmission);
+})
+
+// gather form info
 function formSubmission(event) {
   document.querySelector("div#results").removeAttribute("class", "hidden");
   let form = document.querySelector("form")
@@ -36,24 +47,15 @@ function formSubmission(event) {
   const numsToReplace = document.getElementById("bot").value;
   const numsFiltered = count(numsToReplace);
 
-  output.innerHTML ='';
+  output.innerHTML = '';
   document.getElementById("bot").innerText = count;
   output.append("your results are: " + numsFiltered);
   form.reset();
-  form.addEventListener("submit", refreshForm);
-}
-
-function refreshForm() {
-  let form = document.querySelector("form");
-  form.reset();
+  
 }
 
 
-window.addEventListener("load", function () {
-  let form = document.querySelector("form");
-  form.addEventListener("submit", formSubmission);
 
-})
 
 
 
