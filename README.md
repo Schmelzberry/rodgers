@@ -1,6 +1,6 @@
 # Mr Rodgers' Bot Word Replace
 
-#### By Jake Elsberry
+## By Jake Elsberry
 
 #### A simple robot who will count for you and apply their own take on what certain numbers represent.
 
@@ -34,7 +34,7 @@ Copyright (c) 8/11/2023 Jake Elsberry - all rights reserved
 
 ## Tests for Business Logic
 
-### Describe: count()
+#### Describe: count()
 
 * Test #1: "It should return a string if the user inputs a string"
 Code: count(input);
@@ -49,7 +49,7 @@ Code: count("5");
 Expected Output: ["1", "2", "3", "4", "5"]
 
 
-### Describe: numReplace() 
+#### Describe: numReplace() 
 
 * Test #1 "It should further modify the user's array from count function using for each loop"
 Code: rodgersCount("4");
