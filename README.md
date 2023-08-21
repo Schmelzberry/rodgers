@@ -1,4 +1,4 @@
-# Mr Rodgers' Bot Word Replace
+# Mr Rogers' Bot Word Replace
 
 ## By Jake Elsberry
 
