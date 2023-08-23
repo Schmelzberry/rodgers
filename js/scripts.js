@@ -4,7 +4,7 @@
 function count(input) {
   let splitInput = input.split(" ");
   let userInfoArray = [];
-  for (let i = 1; i <= splitInput; i += 1) {
+  for (let i = 0; i <= splitInput; i += 1) {
     userInfoArray.push(i);
   }
   return numReplace(userInfoArray);
@@ -49,7 +49,7 @@ function formSubmission(event) {
 
   output.innerHTML = '';
   document.getElementById("bot").innerText = count;
-  output.append("Your results are: " + numsFiltered);
+  output.append("Your results are " + numsFiltered);
   form.reset();
   
 }
