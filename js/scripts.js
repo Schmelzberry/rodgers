@@ -41,15 +41,15 @@ window.addEventListener("load", function () {
 // gather form info
 function formSubmission(event) {
   document.querySelector("div#results").removeAttribute("class", "hidden");
-  let form = document.querySelector("form")
-  let output = document.getElementById("bot-output")
+  let form = document.querySelector("form");
+  let output = document.getElementById("bot-output");
   event.preventDefault();
   const numsToReplace = document.getElementById("bot").value;
   const numsFiltered = count(numsToReplace);
 
   output.innerHTML = '';
   document.getElementById("bot").innerText = count;
-  output.append("Your results are " + numsFiltered);
+  output.append("Your results are: " + numsFiltered);
   form.reset();
   
 }
