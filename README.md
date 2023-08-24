@@ -21,7 +21,7 @@ For example, all digits of the number 2, 24, or 2099 would be replaced with "Boo
 * For numbers that contain a 3, all digits are replaced with "Won't you be my neighbor?"
 For example, all digits of the number 39, 3, or 8763 would be replaced with "Won't you be my neighbor?"
 ## Setup/Installation Requirements
-1. Start by cloning this repository to your desktop. 
+1. Start by cloning this repository to your desktop or preferred local system. 
 
 2. Navigate to the rodgers folder and make sure you're at the top level of the directory.
 
