@@ -17,6 +17,7 @@ form {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 5px;
   padding: px;
+  float: left;
 }
 
 .hidden {
@@ -30,6 +31,7 @@ form {
   border: solid black;
   border-radius: 3px;
   margin: 5px;
+  float: left;
 
 }
 
@@ -37,6 +39,9 @@ form {
   font-weight: bold;
 }
 
+
+
 #results {
   font-weight: bold;
+  float: left;
 }
